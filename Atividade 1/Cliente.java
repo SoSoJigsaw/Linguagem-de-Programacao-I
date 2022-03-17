@@ -10,7 +10,7 @@ public class Cliente {
 
     //métodos
     public void nome() {
-        System.out.println("O cliente é... " + nome);
+        System.out.println("\nO cliente é... " + nome);
     }
 
     public void sexo() {
@@ -31,9 +31,8 @@ public class Cliente {
     }
 
     public void parcela() {
-        System.out.println("Financiamento feito em " + parcela + " parcelas");
+        System.out.println("Financiamento feito em " + parcela + " parcelas \n");
     }
-
 
     public static void main (String[] args) {
 
@@ -52,6 +51,19 @@ public class Cliente {
         C1.idade();
         C1.financiamento();
         C1.parcela();
+
+
+        Cliente C2 = new Cliente();
+
+        C2.nome = "Patrick Souza";
+        C2.sexo = "Masculino";
+        C2.idade = 23;
+        C2.financiamento = false;
+
+        C2.nome();
+        C2.sexo();
+        C2.idade();
+        C2.financiamento();
     }
     
 }

@@ -12,7 +12,7 @@ public class Funcionario {
 
     //métodos
     public void nome() {
-        System.out.println("O funcionário é... " + nome);
+        System.out.println("\nO funcionário é... " + nome);
     }
 
     public void sexo() {
